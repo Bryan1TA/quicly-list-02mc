@@ -31,7 +31,7 @@ function showItemsList() {
             <label for="item-${index}">${item.name}</label>
         </div>
 
-        <button>
+        <button onclick="removeItem('${item.name}')">
             <img src="./assets-20250601T143517Z-1-001/assets/trash-icon.svg" alt="trash-icon">
         </button>
     </div>`
@@ -39,4 +39,19 @@ function showItemsList() {
 
     })
 
+}
+
+function removeItem(itemName) {
+    const intemIndex = items.findIndex((item) => item.name === itemName)
+    const divWarning = document.querySelector(".warning")
+
+     divWarning.classList.remove("hide-warning")
+
+
+    
+    
+    
+     if (itemIndex !== -1) {
+        items.splice(itemIndex, 1)
+     }
 }
