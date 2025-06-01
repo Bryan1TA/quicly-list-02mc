@@ -176,3 +176,13 @@ main {
     }
 
 }
+
+.warning {
+    background: var(--color-danger);
+    color: var(--always-white);
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.2rem;
+    
+}
