@@ -184,5 +184,28 @@ main {
     display: flex;
     justify-content: space-between;
     border-radius: 1.2rem;
-    
+    margin-top: 2.4rem;
+
+
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .4s ease, trasform .4s ease-out;
+
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+    }
+
+    i {
+        font-size: 2rem;
+    }
+
+    button {
+        border: none;
+        background: none;
+        color: var(--always-white);
+    }
+
 }
